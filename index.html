@@ -12,13 +12,13 @@
       <div id="container">
 
         <div class="prev-image">
-          <i class="fas fa-chevron-left" @click="decreaseIndex"></i>
+          <i class="fas fa-chevron-left" @click="prevImage"></i>
         </div>
         <div class="current-image">
           <img :src="images[imagesIndexArray]" alt="">
         </div>
         <div class="next-image">
-          <i class="fas fa-chevron-right" @click="increaseIndex"></i>
+          <i class="fas fa-chevron-right" @click="nextImage"></i>
         </div>
         <div class="circles-current-image">
           <i v-for="(image, index) in images" :class="index == imagesIndexArray ? 'fas' : ''" class="far fa-circle"></i>
