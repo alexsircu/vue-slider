@@ -4,9 +4,9 @@ var app = new Vue(
     data: {
       imagesIndexArray: 0,
       images: [
-        "https://modernweb.com/app/uploads/2017/03/vue.jpg",
-        "https://reactjs.org/logo-og.png",
-        "https://firstclassjs.com/wp-content/uploads/2019/02/angular-logo.png"
+        "https://raw.githubusercontent.com/anaida07/MEVN-boilerplate/master/docs/Vue.js_Logo.svg.png",
+        "https://miro.medium.com/max/1000/1*N_6DIrFp3b3qv3WTDohqxg.png",
+        "https://aleksei-bulgak-study.github.io/presentation/images/logo.png"
       ]
     },
     methods: {

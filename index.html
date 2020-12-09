@@ -4,25 +4,28 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <title>Slider con Vue</title>
   </head>
   <body>
     <div id="root">
       <div id="container">
 
-        <div class="prev-image"><i class="fas fa-chevron-left" @click="decreaseIndex"></i></div>
+        <div class="prev-image">
+          <i class="fas fa-chevron-left" @click="decreaseIndex"></i>
+        </div>
         <div class="current-image">
           <img :src="images[imagesIndexArray]" alt="">
         </div>
-        <div class="next-image"><i class="fas fa-chevron-right" @click="increaseIndex"></i></div>
+        <div class="next-image">
+          <i class="fas fa-chevron-right" @click="increaseIndex"></i>
+        </div>
+        <div class="circles-current-image">
+          <i v-for="(image, index) in images" :class="index == imagesIndexArray ? 'fas' : ''" class="far fa-circle"></i>
+        </div>
 
       </div>
-
     </div>
-
-
-
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
